@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.getit.deliverymanager.ViewOrder">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView android:layout_width="139dp" android:layout_height="39dp"
+            android:text="Total Due: 12,000"
+            android:layout_gravity="center_horizontal|top"/>
+
+        <TextView
+            android:layout_width="225dp"
+            android:layout_height="37dp"
+            android:text="Amount Given: 15,000"
+            android:layout_gravity="center"
+            android:id="@+id/textView"/>
+
+        <TextView
+            android:layout_width="139dp"
+            android:layout_height="37dp"
+            android:text="Change: 3,000"
+            android:layout_gravity="center_horizontal|bottom"
+            android:id="@+id/textView2"/>
+    </TableLayout>
+
+    <com.getit.deliverymanager.MultiButton
+        android:id="@+id/Button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/notSet"
+        android:layout_gravity="center_horizontal|bottom"/>
+
+</FrameLayout>
